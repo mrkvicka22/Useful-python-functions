@@ -1,17 +1,6 @@
 import math
 
-def d(n):
-	c = 1
-	sumDiv = 0
-	while c < n:
-		if n % c == 0:
-			sumDiv = sumDiv + c
-		else:
-			pass
-		c = c + 1
-	return sumDiv
-
-def D(n):
+def divisorsOf(n):
 	c = 1
 	divisorsCount = 0
 	while c <= math.floor(math.sqrt(n)):
@@ -27,12 +16,12 @@ def D(n):
 	return divisorsCount
 
 def isPrime(n):
-	c = 2
-	while c <= math.floor(math.sqrt(n)):
-		if n % c == 0:
+	c = 3
+	while c <= math.floor(math.sqrt(n)) and math.floor(math.sqrt(n)) % 2 != 0 :
+		if math.floor(math.sqrt(n)) % c == 0:
 			return False
 		else:
-			c = c + 1
+			c = c + 2
 	return True
 
 def countDigits(n):
