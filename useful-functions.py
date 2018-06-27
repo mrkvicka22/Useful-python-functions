@@ -18,7 +18,7 @@ def divisorsOf(n):
 def isPrime(n):
 	c = 3
 	while c <= math.floor(math.sqrt(n)) and math.floor(math.sqrt(n)) % 2 != 0 :
-		if math.floor(math.sqrt(n)) % c == 0:
+		if n % c == 0:
 			return False
 		else:
 			c = c + 2
