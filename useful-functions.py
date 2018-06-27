@@ -37,3 +37,6 @@ def factorial(n):
       result = result * n
       n = n - 1
     return result;
+
+def plusFactorial(n):
+  return n*((n+1)/2);
