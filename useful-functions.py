@@ -38,3 +38,13 @@ def isPrime(n):
 def countDigits(n):
 	digitsNumber = [int(i) for i in str(n)]
 	return len(digitsNumber)
+
+def factorial(n):
+  result = 1
+  if n <= 0:
+    return "you cannot make factorial of negative number";
+  else:
+    while n > 1:
+      result = result * n
+      n = n - 1
+    return result;
